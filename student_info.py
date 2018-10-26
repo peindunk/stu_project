@@ -74,6 +74,7 @@ def sort_by_age_h2l(infos):
 def sort_by_age_l2h(infos):
     return sorted(infos,key=lambda x:x.age)
 
+# 从文件读取数据
 def get_info_from_file():
     infos = []
     filename = 'si.txt'
@@ -88,6 +89,7 @@ def get_info_from_file():
             infos.append(stu)
     return infos
 
+# 写数据到文件
 def save_info_to_file(infos):
     if not infos:
         print('无需要保存的信息')
